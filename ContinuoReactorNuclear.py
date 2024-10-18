@@ -30,6 +30,7 @@ class ReactorNuclear:
         self.k = float(input("Ingrese Coeficiente de enfriamiento en W/°C: "))
         self.T_cool = float(input("Ingrese Temperatura del sistema de enfriamiento en grados Celsius (°C): "))
         self.C = float(input("Ingrese Capacidad térmica del reactor (J/°C): "))
+        self.T0 = float(input("Ingrese Temperatura inicial del reactor: "))
         
         self.solucion = odeint(self.modelo, self.T0, self.tiempo)
         

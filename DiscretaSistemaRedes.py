@@ -93,8 +93,9 @@ class SistemaRedes:
         self.CAPACIDAD_COLA = int(input("Ingrese Capacidad de la cola de espera: "))
         self.TIEMPO_PROCESAMIENTO_MIN = int(input("Ingrese Tiempo mínimo de procesamiento de un paquete (segundos): "))
         self.TIEMPO_PROCESAMIENTO_MAX = int(input("Ingrese Tiempo máximo de procesamiento de un paquete (segundos): "))
-        self.TIEMPO_LLEGADAS = int(input("Ingrese Tiempo promedio entre la llegada de paquetes (segundos): "))
+        self.TIEMPO_LLEGADAS = float(input("Ingrese Tiempo promedio entre la llegada de paquetes (segundos): "))
         self.TOTAL_PAQUETES = int(input("Ingrese Número total de paquetes a simular: "))
+        print("")
         
         random.seed(self.SEMILLA)  # Establece la semilla para reproducir resultados
         env = simpy.Environment()  # Crea el entorno de simulación
