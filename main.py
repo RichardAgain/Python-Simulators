@@ -71,6 +71,3 @@ while True:
     except ValueError as err:
         input('Opcion no valida (Presione ENTER para continuar) ')
         continue
-
-    
-
